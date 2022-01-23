@@ -9,7 +9,7 @@ class MyDocument extends Document {
 					<link rel="preconnect" href="https://fonts.googleapis.com" />
 					<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
 				</Head>
-				<body className={'bg-gradient-to-r from-amber-100 to-amber-500'}>
+				<body className={'bg-gradient-to-r from-amber-100 to-amber-500 dark:from-dark-500 dark:to-dark-700 dark:text-white'}>
 					<Main />
 					<NextScript />
 				</body>

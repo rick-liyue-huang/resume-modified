@@ -4,9 +4,17 @@ import {GoLocation} from "react-icons/go";
 import {GiTie} from "react-icons/gi";
 import {MdOutlineMarkEmailRead} from 'react-icons/md';
 import {BiMobileVibration} from 'react-icons/bi';
+import {useTheme} from 'next-themes'
 
 
 const Sidebar = () => {
+
+	const {theme, setTheme} = useTheme();
+
+	const handleToggleTheme = () => {
+		setTheme(theme === 'light' ? 'dark' : 'light')
+	};
+
 	return (
 		<div>
 			<img className={'w-32 h-32 rounded-full mx-auto'} src="https://avatars.githubusercontent.com/u/20208332?v=4" alt="avatar"/>
@@ -33,7 +41,7 @@ const Sidebar = () => {
 				</div>
 				<div className={'flex items-center justify-center my-2 text-green-800'}>
 					<BiMobileVibration className={'mr-2'} />
-					0499059029
+					0499 059 029
 				</div>
 			</div>
 			{/* Email Button */}
@@ -41,7 +49,11 @@ const Sidebar = () => {
 				className={'focus:outline-none bg-gradient-to-r from-amber-100 to-amber-200 w-8/12 rounded-full py-2 px-5 text-green-600 my-2'}
 				onClick={() => window.open('MailTo: rick.liyue.huang@gmail.com')}
 			>Email Me</button>
-			<button className={'bg-gradient-to-r from-amber-100 to-amber-200 w-8/12 rounded-full py-2 px-5 text-green-600 my-2'}>Change Style</button>
+			<button
+				className={'bg-gradient-to-r from-amber-100 to-amber-200 w-8/12 rounded-full py-2 px-5 text-green-600 my-2'}
+				onClick={handleToggleTheme}
+			>
+				Change Style</button>
 		</div>
 	);
 };
