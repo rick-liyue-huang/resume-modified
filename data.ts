@@ -47,34 +47,59 @@ export const services: Service[] = [
 export const languages: Skill[] = [
 	{
 		Icon: BsCircleFill,
-		name: "Python",
-		level: "45",
+		name: "Javascript",
+		level: "90%",
 	},
 	{
 		Icon: BsCircleFill,
-		name: "Java Script",
-		level: "60",
+		name: "React.js",
+		level: "90%",
 	},
 	{
 		Icon: BsCircleFill,
-		name: "React Native",
-		level: "80",
+		name: "Next.js",
+		level: "80%",
 	},
 	{
 		Icon: BsCircleFill,
-		name: "React",
-		level: "70",
+		name: "Angular",
+		level: "80%",
 	},
 	{
 		Icon: BsCircleFill,
-		name: "Django",
-		level: "80",
+		name: "Node.js",
+		level: "80%",
 	},
 	{
 		Icon: BsCircleFill,
 		name: "Bootstrap",
-		level: "80",
+		level: "80%",
 	},
+	{
+		Icon: BsCircleFill,
+		name: "Java",
+		level: "60%",
+	},
+	{
+		Icon: BsCircleFill,
+		name: "AntDesign",
+		level: "80%",
+	},
+	{
+		Icon: BsCircleFill,
+		name: "Firebase",
+		level: "80%",
+	},
+	{
+		Icon: BsCircleFill,
+		name: "MySQL",
+		level: "80%",
+	},
+	{
+		Icon: BsCircleFill,
+		name: "AWS",
+		level: "80%",
+	}
 ];
 
 export const tools: Skill[] = [
@@ -98,6 +123,7 @@ export const tools: Skill[] = [
 		name: "Framer",
 		level: "45",
 	},
+
 ];
 
 export const projects: IProject[] = [
