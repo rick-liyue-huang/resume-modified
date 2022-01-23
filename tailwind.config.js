@@ -5,6 +5,9 @@ module.exports = {
   ],
   darkMode: false,
   theme: {
+    fontFamily: {
+      'rick-font': ['Righteous',],
+    },
     extend: {},
   },
   plugins: [],
