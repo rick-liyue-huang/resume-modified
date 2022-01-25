@@ -4,6 +4,8 @@ import {services} from '../data';
 import {GetServerSidePropsContext, GetStaticPropsContext} from "next";
 import ServiceCard from "../components/ServiceCard";
 import {fadeIn, routeAnimation, stagger} from "../animates";
+import Head from 'next/head';
+
 
 // export const apiUrl = `http://localhost:3000/api`
 
@@ -14,6 +16,11 @@ const index = ({endpoint}) => {
     <motion.div
       variants={routeAnimation} initial={'initial'} animate={'animate'} exit={'exit'}
       className={'flex flex-col px-6 pt-1 flex-grow'}>
+      <Head>
+        <title>
+          Fullstack Developer
+        </title>
+      </Head>
       <h5 className={'my-3 font-medium'}>
         akjshkjsdhskjdhfkjsdhsdkjhsdkjs
       </h5>

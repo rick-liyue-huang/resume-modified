@@ -5,6 +5,7 @@ import ProjectCard from "../components/ProjectCard";
 import ProjectNavbar from "../components/ProjectNavbar";
 import {Category} from "../types";
 import {fadeIn, routeAnimation, stagger} from "../animates";
+import Head from "next/head";
 
 const Projects = () => {
 
@@ -29,6 +30,13 @@ const Projects = () => {
 		<motion.div
 			variants={routeAnimation} initial={'initial'} animate={'animate'} exit={'exit'}
 			className={'px-5 py-2 overflow-y-scroll'} style={{height: '65vh'}}>
+
+			<Head>
+				<title>
+					my projects
+				</title>
+			</Head>
+
 			<ProjectNavbar handleFilterCategory={handleFilterCategory} active={active} />
 			<motion.div
 				variants={stagger} initial={'initial'} animate={'animate'}

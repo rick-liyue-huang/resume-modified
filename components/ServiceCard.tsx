@@ -17,7 +17,7 @@ const ServiceCard: React.FC<{
 		<div className={'p-2 flex items-center space-x-4'}>
 			<Icon className={'w-12 h-12 text-green-600'} />
 			<div>
-				<h4 className={'font-bold'}>{title}</h4>
+				<h5 className={'font-bold'}>{title}</h5>
 				<p dangerouslySetInnerHTML={createMarkup()} />
 			</div>
 		</div>

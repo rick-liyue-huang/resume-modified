@@ -3,6 +3,7 @@ import {motion} from "framer-motion";
 import {languages} from "../data";
 import Bar from "../components/Bar";
 import {fadeIn, routeAnimation} from "../animates";
+import Head from "next/head";
 
 const resume = () => {
 
@@ -10,6 +11,11 @@ const resume = () => {
 		<motion.div
 			variants={routeAnimation} initial={'initial'} animate={'animate'} exit={'exit'}
 			className={'px-6 py-2'}>
+			<Head>
+				<title>
+					my resume
+				</title>
+			</Head>
 			{/* education */}
 			<div className="grid md:grid-cols-2 gap-6">
 				<motion.div variants={fadeIn} initial={'initial'} animate={'animate'}>
