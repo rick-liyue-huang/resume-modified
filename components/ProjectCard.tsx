@@ -7,11 +7,23 @@ import Image from 'next/image'
 import {fadeIn, stagger} from "../animates";
 
 const ProjectCard: React.FC<{
-	project: IProject
-}> = ({project: {name, image_path, category,
-	deployed_url,description, github_url, key_techs}}) => {
+	project: IProject,
+	showDetail: number | null,
+	setShowDetail: (id: number | null) => void
+}> = ({
+	 project: {
+		 id,
+		 name,
+		 image_path,
+		 category,
+		 deployed_url,
+		 description,
+		 github_url,
+		 key_techs
+	}, showDetail, setShowDetail
+}) => {
 
-	const [showDetail, setShowDetail] = useState(false);
+	// const [showDetail, setShowDetail] = useState(false);
 
 	return (
 		<div>
@@ -21,7 +33,7 @@ const ProjectCard: React.FC<{
 					alt={name}
 					className={'cursor-pointer'}
 					onClick={(e) => {
-						setShowDetail(true)
+						setShowDetail(id)
 					}}
 					width={'300'}
 					height={'150'}
@@ -31,12 +43,15 @@ const ProjectCard: React.FC<{
 			</div>
 			<p className={'my-2 text-center'}>{name}</p>
 			{
-				showDetail && (
+				showDetail === id && (
 					<div className={'grid md:grid-cols-2 ' +
 						'absolute top-0 left-0 z-10 h-auto w-full gap-x-12 text-black-700' +
-						'dark:text-white dark:bg-dark-700 bg-amber-100 p-2'}
+						'dark:text-white dark:bg-dark-700 bg-amber-100 p-2 md:p-10 rounded-lg'}
 					>
-						<motion.div variants={stagger} initial={'initial'} animate={'animate'}>
+						<motion.div
+							variants={stagger} initial={'initial'} animate={'animate'}
+							className={'border-2 border-green-300 rounded-2xl p-1'}
+						>
 							<motion.div variants={fadeIn}>
 								<Image width={'600'} height={'300'} layout={'responsive'} quality={'100'} src={image_path} alt={name} />
 							</motion.div>
@@ -70,7 +85,7 @@ const ProjectCard: React.FC<{
 
 						<button className={'absolute top-1 right-3 rounded-full ' +
 							'focus:outline-none bg-gray-200 dark:bg-dark-700'}>
-							<MdClose size={30} onClick={() => setShowDetail(false)} />
+							<MdClose size={30} onClick={() => setShowDetail(null)} />
 						</button>
 					</div>
 				)

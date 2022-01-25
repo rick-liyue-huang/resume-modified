@@ -133,6 +133,7 @@ export const tools: Skill[] = [
 
 export const projects: IProject[] = [
 	{
+		id: 1,
 		name: "COVID Tracker",
 		description:
 			"This app shows a statistical view about corona virus over the world",
@@ -143,6 +144,7 @@ export const projects: IProject[] = [
 		key_techs: ["React", "Chart.js", "Material UI"],
 	},
 	{
+		id: 2,
 		name: "Algorithm Visualizer",
 		image_path: "/images/algoVisual.png",
 		deployed_url: "https://visual-algorithm.web.app/",
@@ -154,6 +156,7 @@ export const projects: IProject[] = [
 	},
 
 	{
+		id: 3,
 		name: "Dev Talks",
 		image_path: "/images/dev.jpg",
 		deployed_url: "https://dev-talks.herokuapp.com/",
@@ -173,6 +176,7 @@ export const projects: IProject[] = [
 	},
 
 	{
+		id: 4,
 		name: "Realtime Chat App",
 		image_path: "/images/chatapp.jpg",
 		deployed_url: "https://sumit-chat.netlify.app/",
@@ -184,6 +188,7 @@ export const projects: IProject[] = [
 	},
 
 	{
+		id: 5,
 		name: "Tweeter Clone",
 		image_path: "/images/tweetme.jpg",
 		deployed_url: "http://sumaxtweetme.pythonanywhere.com/",
@@ -195,6 +200,7 @@ export const projects: IProject[] = [
 	},
 
 	{
+		id: 6,
 		name: "Color Classification using tf.js",
 		image_path: "/images/color.jpg",
 		deployed_url: "!#",
@@ -205,6 +211,7 @@ export const projects: IProject[] = [
 		key_techs: ["Express", "TensorFlow.js", "Vanilla js"],
 	},
 	{
+		id: 7,
 		name: "YouTube using YouTube ",
 		image_path: "/images/youtubeClone.png",
 		deployed_url: "https://not-utube.web.app/",
@@ -222,6 +229,7 @@ export const projects: IProject[] = [
 		],
 	},
 	{
+		id: 8,
 		name: "Football App",
 		image_path: "/images/football.png",
 		deployed_url: "https://o-my-goal.web.app/",

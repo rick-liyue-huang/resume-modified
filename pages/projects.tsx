@@ -4,12 +4,14 @@ import { projects as projectsData} from "../data";
 import ProjectCard from "../components/ProjectCard";
 import ProjectNavbar from "../components/ProjectNavbar";
 import {Category} from "../types";
-import {fadeIn, stagger} from "../animates";
+import {fadeIn, routeAnimation, stagger} from "../animates";
 
 const Projects = () => {
 
 	const [projects, setProjects] = useState(projectsData);
 	const [active, setActive] = useState('all');
+
+	const [showDetail, setShowDetail] = useState<number | null>(null);
 
 	const handleFilterCategory = (category: Category | 'all') => {
 		if (category === 'all') {
@@ -24,7 +26,9 @@ const Projects = () => {
 	}
 
 	return (
-		<div className={'px-5 py-2 overflow-y-scroll'} style={{height: '65vh'}}>
+		<motion.div
+			variants={routeAnimation} initial={'initial'} animate={'animate'} exit={'exit'}
+			className={'px-5 py-2 overflow-y-scroll'} style={{height: '65vh'}}>
 			<ProjectNavbar handleFilterCategory={handleFilterCategory} active={active} />
 			<motion.div
 				variants={stagger} initial={'initial'} animate={'animate'}
@@ -34,12 +38,12 @@ const Projects = () => {
 						<motion.div
 							variants={fadeIn}
 							key={project.name} className={'col-span-12 sm:col-span-6 lg:col-span-4 p-2 text-amber-400 dark:text-amber-600 bg-green-200 dark:bg-dark-700 rounded-b-2xl'}>
-							<ProjectCard project={project} />
+							<ProjectCard project={project} showDetail={showDetail} setShowDetail={setShowDetail} />
 						</motion.div>
 					))
 				}
 			</motion.div>
-		</div>
+		</motion.div>
 	);
 };
 

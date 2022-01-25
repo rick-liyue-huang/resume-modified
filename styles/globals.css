@@ -8,3 +8,12 @@ body {
 	background-color: darkslategrey;
 	font-family: sans-serif;
 }
+
+
+::-webkit-scrollbar-thumb {
+	background-image: linear-gradient(to right bottom, #6CD49BFF, #D5D56CFF);
+}
+::-webkit-scrollbar {
+	width: 6px;
+	height: 0;
+}

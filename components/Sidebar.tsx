@@ -22,7 +22,9 @@ const Sidebar = () => {
 				<span className={'text-amber-600'}>Rick</span> Huang
 			</h3>
 			<p className={'px-2 py-1 bg-green-100 rounded-full text-amber-400'}>Fullstack Developer</p>
-			<a className={'px-2 py-1 my-3 bg-green-100 text-amber-400 rounded-full flex items-center justify-center'} href={''} download={'name'} >
+			<a
+				className={'px-2 py-1 my-3 bg-green-100 text-amber-400 rounded-full flex items-center justify-center'}
+				href={'/assets/Resume-Rick-Huang.pdf'} download={'Resume-Rick-Huang.pdf'} >
 				<GiTie className={'w-6 h-6'} />Get Resume
 			</a>
 			<a className={'px-2 py-1 my-3 bg-green-100 text-amber-400 rounded-full flex items-center justify-center'} href={'https://github.com/rick-liyue-huang'} >

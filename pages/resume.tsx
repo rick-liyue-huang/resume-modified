@@ -2,12 +2,14 @@ import React from 'react';
 import {motion} from "framer-motion";
 import {languages} from "../data";
 import Bar from "../components/Bar";
-import {fadeIn} from "../animates";
+import {fadeIn, routeAnimation} from "../animates";
 
 const resume = () => {
 
 	return (
-		<div className={'px-6 py-2'}>
+		<motion.div
+			variants={routeAnimation} initial={'initial'} animate={'animate'} exit={'exit'}
+			className={'px-6 py-2'}>
 			{/* education */}
 			<div className="grid md:grid-cols-2 gap-6">
 				<motion.div variants={fadeIn} initial={'initial'} animate={'animate'}>
@@ -46,7 +48,7 @@ const resume = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 
 	);
 };

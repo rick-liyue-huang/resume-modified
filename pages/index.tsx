@@ -3,14 +3,16 @@ import {motion} from "framer-motion";
 import {services} from '../data';
 import {GetServerSidePropsContext, GetStaticPropsContext} from "next";
 import ServiceCard from "../components/ServiceCard";
-import {fadeIn, stagger} from "../animates";
+import {fadeIn, routeAnimation, stagger} from "../animates";
 
 export const apiUrl = `http://localhost:3000/api`
 
 const index = () => {
   // console.log('CLIENT', services)
   return (
-    <div className={'flex flex-col px-6 pt-1 flex-grow'}>
+    <motion.div
+      variants={routeAnimation} initial={'initial'} animate={'animate'} exit={'exit'}
+      className={'flex flex-col px-6 pt-1 flex-grow'}>
       <h5 className={'my-3 font-medium'}>
         akjshkjsdhskjdhfkjsdhsdkjhsdkjs
       </h5>
@@ -31,7 +33,7 @@ const index = () => {
           }
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
