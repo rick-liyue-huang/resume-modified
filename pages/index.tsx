@@ -5,10 +5,11 @@ import {GetServerSidePropsContext, GetStaticPropsContext} from "next";
 import ServiceCard from "../components/ServiceCard";
 import {fadeIn, routeAnimation, stagger} from "../animates";
 
-export const apiUrl = `http://localhost:3000/api`
+// export const apiUrl = `http://localhost:3000/api`
 
-const index = () => {
+const index = ({endpoint}) => {
   // console.log('CLIENT', services)
+  console.log(endpoint)
   return (
     <motion.div
       variants={routeAnimation} initial={'initial'} animate={'animate'} exit={'exit'}
@@ -43,25 +44,27 @@ export default index
  * this function can be triggered as receive the data from server
  * @param context
  */
-/*
 
 export const getServerSideProps = async (context: GetServerSidePropsContext) => {
 
-  const res = await fetch(`${apiUrl}/services`);
-  const data = await res.json();
+  console.log(process.env.VERCEL_URL)
+
+  // const res = await fetch(`${process.env.VERCEL_URL}/api/services`);
+  // const data = await res.json();
   return {
     props: {
-      services: data.services
+      endpoint: process.env.VERCEL_URL
     }
   }
 }
-*/
 
 /**
  * this function will be triggered once during build of this project, but in development mode, it will be triggered
  * every time you refresh the page, just like the getServerSideProps
  * @param context
  */
+/*
+
 export const getStaticProps = async (context: GetStaticPropsContext) => {
   const res = await fetch(`${apiUrl}/services`);
   const data = await res.json();
@@ -71,3 +74,4 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
     }
   }
 }
+*/
