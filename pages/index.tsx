@@ -1,7 +1,9 @@
 import React from "react";
+import {motion} from "framer-motion";
 import {services} from '../data';
 import {GetServerSidePropsContext, GetStaticPropsContext} from "next";
 import ServiceCard from "../components/ServiceCard";
+import {fadeIn, stagger} from "../animates";
 
 export const apiUrl = `http://localhost:3000/api`
 
@@ -14,15 +16,20 @@ const index = () => {
       </h5>
       <div className={'p-4 mt-5 bg-green-100 flex-grow dark:bg-amber-800'} style={{marginLeft: '-1.5rem', marginRight: '-1.5rem'}}>
         <h6 className={'my-3 font-bold text-xl tracking-wider'}>What I Offer</h6>
-        <div className={'grid lg:grid-cols-2 gap-6'}>
+        <motion.div
+          variants={stagger} initial={'initial'} animate={'animate'}
+          className={'grid lg:grid-cols-2 gap-6'}>
           {
             services.map((service, key) => (
-              <div key={key} className={'lg:col-span-1 md:col-span-2 sm:col-span-2 bg-amber-100 rounded-md dark:bg-dark-700'}>
+              <motion.div
+                variants={fadeIn}
+                key={key}
+                className={'lg:col-span-1 md:col-span-2 sm:col-span-2 bg-amber-100 rounded-md dark:bg-dark-700'}>
                 <ServiceCard  service={service} />
-              </div>
+              </motion.div>
             ))
           }
-        </div>
+        </motion.div>
       </div>
     </div>
   )

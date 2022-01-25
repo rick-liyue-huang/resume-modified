@@ -17,7 +17,7 @@ export const services: Service[] = [
 		Icon: FaServer,
 		title: "Backend  Development",
 		about:
-			"handle database, server, api using <b>Express </b> & other popular frameworks",
+			"I handle database including MySQL and MongoDB, server, api using <b>Express </b> & other popular frameworks",
 	},
 	{
 		Icon: AiOutlineApi,
@@ -28,7 +28,7 @@ export const services: Service[] = [
 	{
 		Icon: MdDeveloperMode,
 		title: "Competitive Coder",
-		about: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
+		about: "a daily problem solver in <b>HackerRank</b>  and <b>Lee Code</b> ",
 	},
 	{
 		Icon: AiOutlineAntDesign,
@@ -99,7 +99,12 @@ export const languages: Skill[] = [
 		Icon: BsCircleFill,
 		name: "AWS",
 		level: "80%",
-	}
+	},
+	{
+		Icon: BsCircleFill,
+		name: "Webpack",
+		level: "80%",
+	},
 ];
 
 export const tools: Skill[] = [

@@ -17,7 +17,7 @@ const Sidebar = () => {
 
 	return (
 		<div>
-			<img className={'w-32 h-32 rounded-full mx-auto'} src="https://avatars.githubusercontent.com/u/20208332?v=4" alt="avatar"/>
+			<img className={'w-40 h-40 rounded-full mx-auto'} src="https://avatars.githubusercontent.com/u/20208332?v=4" alt="avatar"/>
 			<h3 className={'my-3 text-3xl font-medium tracking-wider font-rick-font text-amber-700'} >
 				<span className={'text-amber-600'}>Rick</span> Huang
 			</h3>
