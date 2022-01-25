@@ -228,15 +228,5 @@ export const projects: IProject[] = [
 			"Bootstrap",
 		],
 	},
-	{
-		id: 8,
-		name: "Football App",
-		image_path: "/images/football.png",
-		deployed_url: "https://o-my-goal.web.app/",
-		github_url: "https://github.com/Dey-Sumit/football-app",
-		category: ["react"],
-		description:
-			"o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ",
-		key_techs: ["React", "Redux", "Firebase Auth", "API", "Sass", "Bootstrap"],
-	},
+
 ];
