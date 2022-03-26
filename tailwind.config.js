@@ -8,6 +8,10 @@ module.exports = {
     fontFamily: {
       'rick-font': ['Righteous',],
     },
+    // backgroundImage: {
+    //   'light-pattern': "url('/images/Melbourne.jpg')",
+    //   'dark-pattern': "url('/img/footer-texture.png')",
+    // },
     screens: {
       sm: '480px',
       md: '768px',

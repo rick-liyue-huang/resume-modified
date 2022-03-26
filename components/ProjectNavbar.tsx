@@ -26,10 +26,14 @@ const ProjectNavbar = (props) => {
 	return (
 		<div className={'flex space-x-3 px-3 py-s2 list-none overflow-x-auto'}>
 			<NavItem value={'all'} {...props} />
-			<NavItem value={'mongo'} {...props} />
-			<NavItem value={'django'} {...props} />
-			<NavItem value={'node'} {...props} />
+			<NavItem value={'javascript'} {...props} />
 			<NavItem value={'react'} {...props} />
+			<NavItem value={'next'} {...props} />
+			<NavItem value={'angular'} {...props} />
+			<NavItem value={'express'} {...props} />
+			<NavItem value={'mongodb'} {...props} />
+			<NavItem value={'mysql'} {...props} />
+			<NavItem value={'webpack'} {...props} />
 		</div>
 	);
 };
