@@ -22,7 +22,7 @@ const index = ({endpoint}) => {
         </title>
       </Head>
       <h5 className={'my-3 font-medium'}>
-        akjshkjsdhskjdhfkjsdhsdkjhsdkjs
+        Being a full-stack developer, I offer professional experience providing high-impact web solutions for diverse industry organizations. When facing the multiple tasks with time-critical need, I prefer for agile development with my team mates through effective communication. Completing weekly progress report and pretty coding style have required me to communicate efficiently and solve the problems quickly. Preferring for touching new relative techniques help me to widen my sight and deepen my professional knowledge.
       </h5>
       <div className={'p-4 mt-5 bg-green-100 flex-grow dark:bg-amber-800'} style={{marginLeft: '-1.5rem', marginRight: '-1.5rem'}}>
         <h6 className={'my-3 font-bold text-xl tracking-wider'}>What I Offer</h6>

@@ -1,4 +1,5 @@
 import { RiComputerLine } from "react-icons/ri";
+import { GrWorkshop } from 'react-icons/gr'
 import { FaServer } from "react-icons/fa";
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
@@ -11,36 +12,34 @@ export const services: Service[] = [
 		Icon: RiComputerLine,
 		title: "Frontend Development",
 		about:
-			"I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
+			"Building a beautiful and scalable WebApp using <b>HTML</b>,<b>CSS</b>, <b>Javascript</b>, <b>React.js</b> and <b> Angular</b> ",
 	},
 	{
 		Icon: FaServer,
 		title: "Backend  Development",
 		about:
-			"I handle database including MySQL and MongoDB, server, api using <b>Express </b> & other popular frameworks",
+			"Handling database including MySQL and MongoDB, server, api using <b>Express </b> and creating BFF (Backend for Frontend) layer using <b>node.js</b>",
 	},
 	{
 		Icon: AiOutlineApi,
 		title: "API Development",
 		about:
-			"I can develop robust  REST API using <b>django-rest-api</b>  & <b>Node API</b> ",
+			"developing robust <b>REST API</b> and <b>GraphQL API</b> in <b>MERN</b> ",
 	},
 	{
 		Icon: MdDeveloperMode,
 		title: "Competitive Coder",
-		about: "a daily problem solver in <b>HackerRank</b>  and <b>Lee Code</b> ",
+		about: "Loving to widen professional field by touching new professional technique and application",
 	},
 	{
 		Icon: AiOutlineAntDesign,
 		title: "UI/UX designer",
-		about:
-			"stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
+		about: "stunning user interface designer using <b>Figma</b>, <b>MUI</b> and <b>Antd</b>",
 	},
 	{
 		Icon: RiComputerLine,
-		title: "Whatever",
-		about:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
+		title: "More things",
+		about: "Keeping efficient communication with colleagues and clients, and recording weekly working processing reports and project conclusion as well as",
 	},
 ];
 
@@ -58,51 +57,71 @@ export const languages: Skill[] = [
 	{
 		Icon: BsCircleFill,
 		name: "Next.js",
-		level: "80%",
-	},
-	{
-		Icon: BsCircleFill,
-		name: "Angular",
-		level: "80%",
+		level: "90%",
 	},
 	{
 		Icon: BsCircleFill,
 		name: "Node.js",
-		level: "80%",
+		level: "90%",
 	},
 	{
 		Icon: BsCircleFill,
-		name: "Bootstrap",
-		level: "80%",
+		name: "Express.js",
+		level: "90%",
 	},
 	{
 		Icon: BsCircleFill,
-		name: "Java",
-		level: "60%",
+		name: "Angular",
+		level: "90%",
 	},
 	{
 		Icon: BsCircleFill,
-		name: "AntDesign",
-		level: "80%",
+		name: "jQuery",
+		level: "90%",
 	},
 	{
 		Icon: BsCircleFill,
-		name: "Firebase",
+		name: "Express.js",
 		level: "80%",
 	},
 	{
 		Icon: BsCircleFill,
 		name: "MySQL",
+		level: "90%",
+	},
+	{
+		Icon: BsCircleFill,
+		name: "MongoDB",
 		level: "80%",
 	},
 	{
 		Icon: BsCircleFill,
-		name: "AWS",
-		level: "80%",
+		name: "GraphQL",
+		level: "90%",
 	},
 	{
 		Icon: BsCircleFill,
 		name: "Webpack",
+		level: "90%",
+	},
+	{
+		Icon: BsCircleFill,
+		name: "Git",
+		level: "90%",
+	},
+	{
+		Icon: BsCircleFill,
+		name: "Firebase",
+		level: "90%",
+	},
+	{
+		Icon: BsCircleFill,
+		name: "AWS",
+		level: "90%",
+	},
+	{
+		Icon: BsCircleFill,
+		name: "Java",
 		level: "80%",
 	},
 ];
@@ -161,7 +180,7 @@ export const projects: IProject[] = [
 		image_path: "/images/dev.jpg",
 		deployed_url: "https://dev-talks.herokuapp.com/",
 		github_url: "https://github.com/Dey-Sumit/Dev-talks",
-		category: ["node", "mongo", "react"],
+		category: ["node", "mongodb", "react"],
 		description:
 			"Social Media app for developers who can share project,create posts,etc...",
 		key_techs: [

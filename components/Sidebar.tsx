@@ -17,8 +17,9 @@ const Sidebar = () => {
 
 	return (
 		<div>
-			<img className={'w-40 h-40 rounded-full mx-auto'} src="https://avatars.githubusercontent.com/u/20208332?v=4" alt="avatar"/>
-			<h3 className={'my-3 text-3xl font-medium tracking-wider font-rick-font text-amber-700'} >
+			{/*<img className={'w-40 h-40 rounded-full mx-auto'} src="https://avatars.githubusercontent.com/u/20208332?v=4" alt="avatar"/>*/}
+			<div className={'h-6'} />
+			<h3 className={'my-3 text-3xl font-medium tracking-wider font-rick-font text-amber-700 mb-16'} >
 				<span className={'text-amber-600'}>Rick</span> Huang
 			</h3>
 			<p className={'px-2 py-1 bg-green-100 rounded-full text-amber-400'}>Fullstack Developer</p>
@@ -29,14 +30,14 @@ const Sidebar = () => {
 			>
 				<GiTie className={'w-6 h-6'} />Get Resume
 			</a>
-			<a className={'px-2 py-1 my-3 bg-green-100 text-amber-400 rounded-full flex items-center justify-center'}
+			<a className={'px-2 py-1 my-3 bg-green-100 text-amber-400 rounded-full flex items-center justify-center mb-16'}
 				 href={'https://github.com/rick-liyue-huang'}
 				 aria-label={'github'}
 			>
 				<FiGithub className={'w-6 h-6 mr-1'} /> Know More About Me
 			</a>
 			{/* address */}
-			<div className={'my-5 py-4 bg-amber-50'} style={{marginLeft: '-1rem', marginRight: '-1rem'}}>
+			<div className={'my-5 py-4 bg-amber-50 mb-16'} style={{marginLeft: '-1rem', marginRight: '-1rem'}}>
 				<div className={'flex items-center justify-center my-2 text-green-800'}>
 					<GoLocation className={'mr-2'} />
 					<span>Melbourne, Australia</span>

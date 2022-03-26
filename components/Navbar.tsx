@@ -3,7 +3,7 @@ import Link from 'next/link';
 import {useRouter} from "next/router";
 
 type ActiveEnum =
-	'About' | 'Resume' | 'Projects';
+	'About Me' | 'Resume' | 'Projects';
 
 const NavItem: React.FC<{
 	activeItem: ActiveEnum,
@@ -24,13 +24,13 @@ const NavItem: React.FC<{
 
 const Navbar = () => {
 
-	const [activeItem, setActiveItem] = useState<ActiveEnum>('About');
+	const [activeItem, setActiveItem] = useState<ActiveEnum>('About Me');
 
 	const {pathname} = useRouter()
 
 	useEffect(() => {
 		if (pathname === '/') {
-			setActiveItem('About')
+			setActiveItem('About Me')
 		} else if (pathname === '/projects') {
 			setActiveItem('Projects')
 		} else if (pathname === '/resume') {
@@ -45,7 +45,7 @@ const Navbar = () => {
 			>
 				{activeItem}</span>
 			<div className={'text-green-400 font-lg flex space-x-5 text-xl'}>
-				<NavItem activeItem={activeItem} setActiveItem={setActiveItem} name={'About'} route={'/'} />
+				<NavItem activeItem={activeItem} setActiveItem={setActiveItem} name={'About Me'} route={'/'} />
 				<NavItem activeItem={activeItem} setActiveItem={setActiveItem} name={'Resume'} route={'/resume'} />
 				<NavItem activeItem={activeItem} setActiveItem={setActiveItem} name={'Projects'} route={'/projects'} />
 				{/*
