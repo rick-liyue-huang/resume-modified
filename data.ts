@@ -205,5 +205,21 @@ export const projects: IProject[] = [
 			"Webpack",
 			"React.js",
 		],
+	},
+	{
+		id: 5,
+		name: "Firebase Based Reddit",
+		image_path: "/images/project5.png",
+		deployed_url: "https://next-js-reddit-web-app.vercel.app/",
+		github_url: "https://github.com/rick-liyue-huang/NextJS-Reddit-WebApp",
+		category: ["next", "javascript", "firebase"],
+		description:
+			"Using the Next.js and firebase to clone the Reddit WebApp, in which we can login and register the new account and create the community and send the post under the authed user.",
+		key_techs: [
+			"Javascript",
+			"Next.js",
+			"React.js",
+			"Firebase"
+		],
 	}
 ];
